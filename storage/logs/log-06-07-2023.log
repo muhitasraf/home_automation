@@ -1,0 +1,158 @@
+[06-Jul-2023 11:52:39 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: Class Does Not Found. in D:\xampp\htdocs\home_automation\bootstrap\Application.php:26
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(9): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 26
+[06-Jul-2023 11:54:13 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'home_automation_data.products' doesn't exist in D:\xampp\htdocs\home_automation\bootstrap\DB.php:128
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(128): PDO->prepare('SELECT product_...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(15): Core\DB->fetchAll()
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->test(Object(Core\Request))
+#3 D:\xampp\htdocs\home_automation\routes\web.php(9): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 128
+[06-Jul-2023 11:57:40 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 11
+[06-Jul-2023 11:57:40 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 13
+[06-Jul-2023 11:57:40 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(9): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[06-Jul-2023 12:02:01 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 11
+[06-Jul-2023 12:02:01 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 13
+[06-Jul-2023 12:06:01 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Non-static method Core\DB::select() cannot be called statically in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php:14
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->index(Object(Core\Request))
+#1 D:\xampp\htdocs\home_automation\routes\web.php(9): Core\Application->run()
+#2 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 14
+[06-Jul-2023 12:07:45 Asia/Dhaka] PHP Warning:  compact(): Undefined variable $t2 in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 15
+[06-Jul-2023 12:07:45 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 11
+[06-Jul-2023 12:07:45 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 13
+[06-Jul-2023 12:08:08 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 11
+[06-Jul-2023 12:08:08 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 13
+[06-Jul-2023 12:12:55 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 19
+[06-Jul-2023 12:12:55 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 23
+[06-Jul-2023 12:12:58 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 19
+[06-Jul-2023 12:12:58 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 23
+[06-Jul-2023 12:12:58 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 19
+[06-Jul-2023 12:12:58 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 23
+[06-Jul-2023 12:12:58 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 19
+[06-Jul-2023 12:12:58 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 23
+[06-Jul-2023 12:12:59 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 19
+[06-Jul-2023 12:12:59 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 23
+[06-Jul-2023 12:12:59 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 19
+[06-Jul-2023 12:12:59 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 23
+[06-Jul-2023 12:13:22 Asia/Dhaka] PHP Warning:  Undefined variable $html_buttons in D:\xampp\htdocs\home_automation\views\home\index.php on line 19
+[06-Jul-2023 12:13:22 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 24
+[06-Jul-2023 12:14:08 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 25
+[06-Jul-2023 12:14:15 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(9): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[06-Jul-2023 12:14:18 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 25
+[06-Jul-2023 12:21:51 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\views\home\index.php on line 26
+[06-Jul-2023 12:38:58 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(9): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[06-Jul-2023 13:52:23 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[06-Jul-2023 14:46:06 Asia/Dhaka] PHP Warning:  require_once(D:\xampp\htdocs\home_automation/resources/views/master/header.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\home_automation\bootstrap\View.php on line 23
+[06-Jul-2023 14:46:06 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\home_automation/resources/views/master/header.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\home_automation\bootstrap\View.php:23
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\View.php(12): Core\Application->generateView('home/create', Array)
+#1 D:\xampp\htdocs\home_automation\bootstrap\helpers\app.php(19): Core\Application->render('home/create', Array)
+#2 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(21): view('home/create')
+#3 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->create(Object(Core\Request))
+#4 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#5 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\View.php on line 23
+[06-Jul-2023 14:53:27 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 PAGE NOT FOUND in D:\xampp\htdocs\home_automation\bootstrap\View.php:14
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\helpers\app.php(19): Core\Application->render('home/create', Array)
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(21): view('home/create')
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->create(Object(Core\Request))
+#3 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\View.php on line 14
+[06-Jul-2023 14:53:44 Asia/Dhaka] PHP Warning:  require_once(D:\xampp\htdocs\home_automation/resources/views/master/header.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\home_automation\bootstrap\View.php on line 23
+[06-Jul-2023 14:53:44 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\home_automation/resources/views/master/header.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\home_automation\bootstrap\View.php:23
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\View.php(12): Core\Application->generateView('home/create', Array)
+#1 D:\xampp\htdocs\home_automation\bootstrap\helpers\app.php(19): Core\Application->render('home/create', Array)
+#2 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(21): view('home/create')
+#3 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->create(Object(Core\Request))
+#4 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#5 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\View.php on line 23
+[06-Jul-2023 15:28:31 Asia/Dhaka] PHP Warning:  Undefined array key "name" in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 25
+[06-Jul-2023 15:29:39 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php:26
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->store(Object(Core\Request))
+#1 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#2 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 26
+[06-Jul-2023 15:32:07 Asia/Dhaka] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 26
+[06-Jul-2023 15:37:41 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php:25
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(25): json_decode(Array)
+#1 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->store(Object(Core\Request))
+#2 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#3 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 25
+[06-Jul-2023 15:40:00 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php:26
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->store(Object(Core\Request))
+#1 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#2 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 26
+[06-Jul-2023 15:50:10 Asia/Dhaka] PHP Warning:  Undefined array key "name" in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 25
+[06-Jul-2023 15:51:01 Asia/Dhaka] PHP Warning:  Undefined array key "name" in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 25
+[06-Jul-2023 15:51:09 Asia/Dhaka] PHP Warning:  Undefined array key "name" in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 25
+[06-Jul-2023 15:59:06 Asia/Dhaka] PHP Warning:  Undefined array key "post" in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 48
+[06-Jul-2023 15:59:06 Asia/Dhaka] PHP Warning:  foreach() argument must be of type array|object, null given in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 48
+[06-Jul-2023 15:59:06 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[06-Jul-2023 15:59:09 Asia/Dhaka] PHP Warning:  Undefined array key "form_data" in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 25
+[06-Jul-2023 15:59:17 Asia/Dhaka] PHP Warning:  Undefined array key "form_data" in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 25
+[06-Jul-2023 16:22:04 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '3' at line 1 in D:\xampp\htdocs\home_automation\bootstrap\DB.php:135
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(135): PDO->query('SELECT id, name...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(26): Core\DB::query('SELECT id, name...')
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->store(Object(Core\Request))
+#3 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 135
+[06-Jul-2023 16:23:03 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND board =' at line 1 in D:\xampp\htdocs\home_automation\bootstrap\DB.php:135
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(135): PDO->query('SELECT id, name...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(27): Core\DB::query('SELECT id, name...')
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(36): App\Controllers\HomeController->store(Object(Core\Request))
+#3 D:\xampp\htdocs\home_automation\routes\web.php(11): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 135

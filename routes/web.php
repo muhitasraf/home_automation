@@ -4,6 +4,8 @@ use Core\Application;
 
 $app = new Application();
 
-$app::get('/','HomeController','test');
+$app::get('/','HomeController','index');
+$app::get('/create','HomeController','create');
+$app::post('/store','HomeController','store');
 
 $app->run();

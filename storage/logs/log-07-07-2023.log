@@ -1,0 +1,114 @@
+[07-Jul-2023 11:07:56 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 11:21:18 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 11:21:23 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 11:21:24 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 11:21:24 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 11:21:24 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 15:02:24 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 15:02:34 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 15:02:38 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(12): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 15:06:14 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(13): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 15:06:26 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(13): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 15:09:55 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(13): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 27
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 29
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 30
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 31
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 27
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 29
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 30
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 31
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 27
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 29
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 30
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 31
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 27
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 29
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 30
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 31
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 27
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 29
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 30
+[07-Jul-2023 15:28:32 Asia/Dhaka] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\home_automation\resources\views\home\switch_list.php on line 31
+[07-Jul-2023 15:46:07 Asia/Dhaka] PHP Fatal error:  Cannot redeclare App\Controllers\HomeController::store() in C:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 75
+[07-Jul-2023 18:04:14 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\HomeController::delete() in C:\xampp\htdocs\home_automation\bootstrap\Application.php:36
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(16): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 36
+[07-Jul-2023 18:15:19 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[07-Jul-2023 18:28:45 Asia/Dhaka] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in C:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 146
+[07-Jul-2023 18:33:07 Asia/Dhaka] PHP Parse error:  Unclosed '[' on line 147 in C:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 151
+[07-Jul-2023 18:33:08 Asia/Dhaka] PHP Parse error:  Unclosed '[' on line 147 in C:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 151
+[07-Jul-2023 18:42:18 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in C:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 C:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#1 C:\xampp\htdocs\home_automation\public\index.php(4): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21

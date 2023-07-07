@@ -1,6 +1,6 @@
 
         <!-- <form class="" action="" id="output_form">
-            <?php //echo _csrf(); ?>
+        <?php //echo _csrf(); ?>
             <div class="form-group">
                 <label for="outputName">Name</label>
                 <input class="form-control" type="text" name="name" id="outputName">

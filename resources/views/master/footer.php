@@ -1,3 +1,6 @@
+
+        </div>
+    </div>
     <script src="https://getbootstrap.com/docs/4.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo asset('js/toastr.min.js')?>"></script>
 

@@ -68,11 +68,13 @@ class HomeController extends Controller{
     }
 
     public function edit($request){
-        dd($request);
-        return view('home/create');
+        $id = $request['id'];
+        $switch_data = DB::query("SELECT id, name, board, gpio, state FROM outputs WHERE id = $id")->fetch();
+        return view('home/edit',compact('switch_data'));
     }
 
     public function update(){
+        dd($_POST);
         $input = $_POST;
         $error = [];
         if(empty($input['outputName'])){
@@ -86,7 +88,7 @@ class HomeController extends Controller{
         }
 
         if(empty($error)){
-            $chaeck_name = DB::query("SELECT id, name, board, gpio FROM outputs WHERE name = '".$input['outputName']."'")->fetchAll();
+            $chaeck_name = DB::query("SELECT id, name, board, gpio FROM outputs WHERE id NOT IN() name = '".$input['outputName']."'")->fetchAll();
             $chaeck_gpio = DB::query("SELECT id, name, board, gpio FROM outputs WHERE gpio = ".$input['outputGpio']." AND board = '".$input['outputBoard']."'")->fetchAll();
         }
         
@@ -143,9 +145,15 @@ class HomeController extends Controller{
         $all_output = DB::table('outputs')->fetchAll();
         $result = [];
         foreach($all_output as $output){
-            $result += [$output['gpio']=>$output['state']];
+            $result += [$output['gpio']=>$this->test_input($output['state'])];
         }
-        header('Content-Type: application/json; charset=utf-8');
+        //header('Content-Type: application/json; charset=utf-8');
         echo json_encode($result);
+    }
+    public function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
     }
 }

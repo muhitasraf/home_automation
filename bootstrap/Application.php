@@ -14,7 +14,6 @@ class Application{
         $http_method = self::getMethod();
         $url_path = self::getPath();
 
-        
         $callable = $this->match($http_method, $url_path);
 
         if(!$callable){
@@ -30,11 +29,23 @@ class Application{
         if(!is_callable($class, $method)){
             throw new \Exception("Method '$method' is not found in class '$callable[class]'", 500);
         }
+        $str_after_last_slash = '';
+
+        if(!empty($_GET['route']) || !empty($_REQUEST['route'])){
+            $last_slash_pos = strripos($_REQUEST['route'], '/');
+            $str_after_last_slash = substr($_REQUEST['route'], $last_slash_pos +1, strlen($_REQUEST['route']));
+        }
         if(isset($_GET['route'])){unset($_GET['route']);}
         if(isset($_REQUEST['route'])){unset($_REQUEST['route']);}
         $class = new $class;
-        $class->$method($this->request);
-        return;        
+        if(is_numeric($str_after_last_slash)==1){
+            $_REQUEST['id'] = $str_after_last_slash;
+            $_GET['id'] = $str_after_last_slash;
+            $class->$method(['id'=>$str_after_last_slash]);
+        }else{
+            $class->$method($this->request);
+        }
+        return;
     }
 
     private function match($method, $url)

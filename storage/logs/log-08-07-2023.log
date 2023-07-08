@@ -1,0 +1,77 @@
+[08-Jul-2023 09:46:02 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:21
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 21
+[08-Jul-2023 09:51:01 Asia/Dhaka] PHP Warning:  Undefined variable $html_boards in D:\xampp\htdocs\home_automation\resources\views\home\index.php on line 59
+[08-Jul-2023 13:55:23 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:20
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 20
+[08-Jul-2023 14:41:46 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: App\Controllers\HomeController::edit(): Argument #1 ($request) must be of type Core\Request, array given, called in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 44 and defined in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php:70
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\Application.php(44): App\Controllers\HomeController->edit(Array)
+#1 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#2 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php on line 70
+[08-Jul-2023 14:45:45 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in D:\xampp\htdocs\home_automation\bootstrap\DB.php:113
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(113): PDO->prepare('SELECT * FROM o...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(72): Core\DB->fetch()
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(44): App\Controllers\HomeController->edit(Array)
+#3 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 113
+[08-Jul-2023 14:46:04 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in D:\xampp\htdocs\home_automation\bootstrap\DB.php:113
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(113): PDO->prepare('SELECT * FROM o...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(72): Core\DB->fetch()
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(44): App\Controllers\HomeController->edit(Array)
+#3 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 113
+[08-Jul-2023 14:47:10 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in D:\xampp\htdocs\home_automation\bootstrap\DB.php:113
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(113): PDO->prepare('SELECT * FROM o...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(72): Core\DB->fetch()
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(44): App\Controllers\HomeController->edit(Array)
+#3 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 113
+[08-Jul-2023 15:18:48 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in D:\xampp\htdocs\home_automation\bootstrap\DB.php:128
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(128): PDO->prepare('SELECT * FROM o...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(72): Core\DB->fetchAll()
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(44): App\Controllers\HomeController->edit(Array)
+#3 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 128
+[08-Jul-2023 15:18:48 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in D:\xampp\htdocs\home_automation\bootstrap\DB.php:128
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\bootstrap\DB.php(128): PDO->prepare('SELECT * FROM o...')
+#1 D:\xampp\htdocs\home_automation\app\Controllers\HomeController.php(72): Core\DB->fetchAll()
+#2 D:\xampp\htdocs\home_automation\bootstrap\Application.php(44): App\Controllers\HomeController->edit(Array)
+#3 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#4 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\DB.php on line 128
+[08-Jul-2023 16:25:07 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:20
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 20
+[08-Jul-2023 16:26:00 Asia/Dhaka] PHP Fatal error:  Uncaught Exception: 404 Not Found in D:\xampp\htdocs\home_automation\bootstrap\Application.php:20
+Stack trace:
+#0 D:\xampp\htdocs\home_automation\routes\web.php(18): Core\Application->run()
+#1 D:\xampp\htdocs\home_automation\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\home_automation\bootstrap\Application.php on line 20

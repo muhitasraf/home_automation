@@ -22,7 +22,10 @@
                         <th>Action</th>
                     </thead>
                     <tbody>
-                        <?php foreach($all_switch as $key=>$switch){ ?>
+                        <?php 
+                        if(!empty($all_switch)){
+                            foreach($all_switch as $key=>$switch){ 
+                        ?>
                             <tr>
                                 <td><?php echo ++$key; ?></td>
                                 <td><?php echo $switch['name']; ?></td>
@@ -37,7 +40,12 @@
                                     </a>
                                 </td>
                             </tr>
-                        <?php } ?>
+                        <?php 
+                            }
+                        }else{
+                            echo '<tr><td colspan="5" class="text-center h4">There is no switch!<br><a href="'.route('switch_output/create').'">Create Switch</a></td></tr>';
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

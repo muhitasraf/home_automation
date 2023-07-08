@@ -11,10 +11,8 @@ class Request{
     }
 
     private function setData(){
-        if(isset($_GET['route'])){unset($_GET['route']);}
-        if(isset($_REQUEST['route'])){unset($_REQUEST['route']);}
         foreach($_REQUEST as $key=>$value){
-            if ($this->getMethod()==='get') {                    
+            if ($this->getMethod()==='get') {
                 $this->$key = filter_input(INPUT_GET, $key, FILTER_SANITIZE_SPECIAL_CHARS);
                 $this->data->$key = filter_input(INPUT_GET, $key, FILTER_SANITIZE_SPECIAL_CHARS);
             }elseif($this->getMethod()==='post'){

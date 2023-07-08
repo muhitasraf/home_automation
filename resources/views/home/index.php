@@ -25,8 +25,9 @@
                             <th>GPIO</th>
                         </thead>
                         <tbody>
-                        <?php 
-                            $html_buttons = ''; $html_boards = ''; $html_title = '';
+                        <?php
+                        $html_buttons = ''; $html_boards = ''; $html_title = '';
+                        if(!empty($esp_outputs)){
                             foreach($esp_outputs as $esp_output){
                                 if ($esp_output["state"] == "1"){
                                     $button_checked = "checked";
@@ -45,7 +46,12 @@
                                 <td><?php echo $esp_output["gpio"];?></td>
                                 <td></td>
                             </tr>
-                        <?php } ?>
+                        <?php 
+                            }
+                        }else{
+                            echo '<tr><td colspan="4" class="text-center h4">There is no switch!<br><a href="'.route('switch_output/create').'">Create Switch</a></td></tr>';
+                        }
+                         ?>
                         </tbody>
                     </table>
                     <br>

@@ -23,14 +23,14 @@ class HomeController extends Controller{
 
     public function store(){
         $input = $_POST;
-        $error = [];
+        $error = []; $chaeck_name=''; $chaeck_gpio='';
         if(empty($input['outputName'])){
             $error +=['name'=> 'Name Field is empty!'];
         }
         if(empty($input['outputBoard'])){
             $error +=['board'=> 'Board ID is empty!'];
         }
-        if(empty($input['outputGpio'])){
+        if($input['outputGpio']==''){
             $error +=['gpio'=> 'GPIO Field is empty!'];
         }
 
@@ -42,7 +42,7 @@ class HomeController extends Controller{
         if(!empty($chaeck_name)){
             $error +=['name'=> 'Name already exist!'];
         }
-        if(!empty($chaeck_gpio)){
+        if($chaeck_gpio==''){
             $error +=['gpio'=> 'GPIO already exist!'];
         }
 
@@ -74,22 +74,22 @@ class HomeController extends Controller{
     }
 
     public function update(){
-        dd($_POST);
+        
         $input = $_POST;
-        $error = [];
+        $id = $input['id'];
+        $error = []; $chaeck_name=''; $chaeck_gpio='';
         if(empty($input['outputName'])){
             $error +=['name'=> 'Name Field is empty!'];
         }
         if(empty($input['outputBoard'])){
             $error +=['board'=> 'Board ID is empty!'];
         }
-        if(empty($input['outputGpio'])){
+        if($input['outputGpio']==''){
             $error +=['gpio'=> 'GPIO Field is empty!'];
         }
-
         if(empty($error)){
-            $chaeck_name = DB::query("SELECT id, name, board, gpio FROM outputs WHERE id NOT IN() name = '".$input['outputName']."'")->fetchAll();
-            $chaeck_gpio = DB::query("SELECT id, name, board, gpio FROM outputs WHERE gpio = ".$input['outputGpio']." AND board = '".$input['outputBoard']."'")->fetchAll();
+            $chaeck_name = DB::query("SELECT id, name, board, gpio FROM outputs WHERE id NOT IN($id) AND name = '".$input['outputName']."'")->fetchAll();
+            $chaeck_gpio = DB::query("SELECT id, name, board, gpio FROM outputs WHERE id NOT IN($id) AND gpio = ".$input['outputGpio']." AND board = ".$input['outputBoard'])->fetchAll();
         }
         
         if(!empty($chaeck_name)){
@@ -107,7 +107,7 @@ class HomeController extends Controller{
                 'state' => $input['outputState'],
             ];
             
-            $result = DB::table('outputs')->insert($outputData);
+            $result = DB::table('outputs')->where('id',$id)->update($outputData);
             if($result==true){
                 $result = ['status'=>200, 'message'=>'Successfully Insert'];
             }else{
@@ -121,7 +121,14 @@ class HomeController extends Controller{
     }
 
     public function destroy($request){
-        dd($_GET);
+        $id = $request['id'];
+        $result = DB::table('outputs')->where('id',$id)->delete();
+        if($result==true){
+            $result = ['status'=>200, 'message'=>'Successfully Insert'];
+        }else{
+            $result = ['status'=>422, 'message'=>'Unprocessable Entity'];
+        }
+        return redirect('switch_list');
     }
 
     public function change_state(){

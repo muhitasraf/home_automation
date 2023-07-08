@@ -1,37 +1,4 @@
 
-        <!-- <form class="" action="" id="output_form">
-            <?php //echo _csrf(); ?>
-            <div class="form-group">
-                <label for="outputName">Name</label>
-                <input class="form-control" type="text" name="name" id="outputName">
-            </div>
-            <span class="output_name"></span>
-
-            <div class="form-group">
-                <label for="outputBoard">Board ID</label>
-                <input class="form-control" type="number" name="board" min="0" id="outputBoard">
-            </div>
-            <span class="board_id"></span>
-            
-            <div class="form-group">
-                <label for="outputGpio">GPIO Number</label>
-                <input class="form-control" type="number" name="gpio" min="0" id="outputGpio">
-            </div>
-            <span class="gpio_name"></span>
-            
-            <div class="form-group">
-                <label for="outputState">Initial GPIO State</label>
-                <select class="form-control" id="outputState" name="state">
-                    <option value="0">0 = OFF</option>
-                    <option value="1">1 = ON</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <input class="btn btn-info create_output" type="submit" value="Create Output">
-            </div>
-            <p><strong>Note:</strong> in some devices, you might need to refresh the page to see your newly created buttons or to remove deleted buttons.</p>
-        </form> -->
         <div class="rounded d-flex justify-content-center pt-5">
             <div class="col-md-4 col-sm-12 shadow-sm  bg-light">
                 <div class="p-3">
@@ -117,7 +84,7 @@
                     }
                     if(output_data.status == 200){
                         toastr.success(output_data['message']);
-                        window.location.href = '<?php echo route('');?>';
+                        window.location.href = '<?php echo route('switch_list');?>';
                     }
                 }
             });

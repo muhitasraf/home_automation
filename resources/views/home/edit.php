@@ -69,23 +69,22 @@
                 data: {id, outputName, outputBoard, outputGpio, outputState, _csrf},
                 success: function(result){
                     var output_data = JSON.parse(result);
-                    // console.log(output_data.status);
-                    // if(output_data.status == 403){
-                    //     if(output_data['message'].name){
-                    //         $('.output_name').text(output_data['message'].name);
-                    //     }
-                    //     if(output_data['message'].board){
-                    //         $('.board_id').text(output_data['message'].board);
-                    //     }
-                    //     if(output_data['message'].gpio){
-                    //         $('.gpio_name').text(output_data['message'].gpio);
-                    //     }
-                    //     toastr.error("Something went wrong!");
-                    // }
-                    // if(output_data.status == 200){
-                    //     toastr.success(output_data['message']);
-                    //     window.location.href = '<?php //echo route('');?>';
-                    // }
+                    if(output_data.status == 403){
+                        if(output_data['message'].name){
+                            $('.output_name').text(output_data['message'].name);
+                        }
+                        if(output_data['message'].board){
+                            $('.board_id').text(output_data['message'].board);
+                        }
+                        if(output_data['message'].gpio){
+                            $('.gpio_name').text(output_data['message'].gpio);
+                        }
+                        toastr.error("Something went wrong!");
+                    }
+                    if(output_data.status == 200){
+                        toastr.success(output_data['message']);
+                        window.location.href = '<?php echo route('switch_list');?>';
+                    }
                 }
             });
         });
